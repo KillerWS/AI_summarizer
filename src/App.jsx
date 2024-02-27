@@ -1,22 +1,21 @@
 //import React from 'react'
 
-import Demo from "./components/Demo"
-import Hero from "./components/Hero"
-
 import './App.css'
-
+import MySplitComponent from "./components/MySplitComponent"
+import { BrowserRouter, Route, Routes, } from "react-router-dom";
 const App = () => {
   return (
     <main>
-        <div className="main">
-            <div className="gradient"/>
-        </div>
-            <div className="app">
-                <Hero/>
-                <Demo/>
-            </div>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/*" exact element={<MySplitComponent/>}></Route>
+            <Route path="/v1/:modelNum" element={<MySplitComponent/>} />
+          </Routes>
+       </BrowserRouter>     
             
-        
+         {/* <div className="app">
+                <MySplitComponent/>
+            </div> */}
 
     </main>
   )

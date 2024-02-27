@@ -3,11 +3,14 @@ import loader from './loader.svg'
 import copy from './copy.svg'
 import logo from './logo.svg'
 import tick from './tick.svg'
-
+import arrow from './arrow.svg'
+import clear from './clear.svg'
 export {
     linkIcon,
     loader,
     copy,
     logo,
-    tick
+    tick,
+    arrow,
+    clear
 }
